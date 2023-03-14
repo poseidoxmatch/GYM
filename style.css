@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #000;
+}
+ul{
+  position: relative;
+  transform: skewY(-15deg);
+}
+ul li{
+  position: relative;
+  list-style: none;
+  width: 190px;
+  background: #3e3f46;
+  padding: 35px ;
+  padding-top: 17px;
+  transition: 0.5s;
+  z-index: calc(1 * var(--i));
+
+}
+ul li:hover{
+  transform: translateX(-50px);
+  background: var(--clr);
+}
+
+ul li::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 82px;
+  background: #3e3f46;
+  filter: brightness(0.7);
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li:hover::before {
+  background: var(--clr);
+  filter: brightness(0.7);
+}
+ul li::after{
+  content: '';
+  position: absolute;
+  top:-40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #3e3f46;
+  filter: brightness(0.9);
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #999;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  font-size: 23px;
+
+}
+
+ul li:hover::after{
+  background: var(--clr);
+  filter:brightness(0.9)
+}
+ul li:hover a{
+  color: #fff;
+  
+
+}
+
+ul li:last-child::after{
+  box-shadow: -120px 120px 20px rgba(0,0,0,0.25);
+}
+ul li span{
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100px;  
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  font-size: 1.25em;
+}
+ul li:hover span {
+  opacity: 1;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 40px;
+  }
+
+  .two {
+    grid-column: 2 / 4;
+    grid-row: 1/ 2;
+    background-color: beige;
+    width: 1040px;
+ 
+  }
+
+  .three {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    background-color: orangered;
+    width: 250px; 
+    color:antiquewhite;
+    font-size: 30px;   
+    padding: 47px;
+    height: 610px;
+  }
+  
+  .five {
+    grid-column: 2/2;
+    grid-row: 2/ 4;
+    background-color: white;
+    height: 500px;
+    width: 260px;
+
+  }
+
+  h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .frame{
+    width: 400%;
+    height: 100%;
+  }
+
+  a{
+    color: #fff;
+    
+  }
+
+  span i {
+    padding: 1px;
+  }
+
+  

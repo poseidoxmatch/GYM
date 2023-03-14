@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app {
+    background-color: rgb(255, 255, 255);
+    width: 970px;
+    height: 500px;
+    border: 3px solid #091406;
+    border-radius: 8px;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  
+  .app::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  
+  #addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(4, 10, 4, 0.877);
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 3px solid #fffb06;
+    
+    cursor: pointer;
+    color: #e5e5e5;
+    font-stretch:wider;
+  }
+  
+  .fa-plus {
+    background-color: #d8ee14;
+    padding: px;
+    border-radius: 3px;
+  }
+  
+  #tasks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  
+  #tasks div {
+    border: 3px solid #140d04;
+    background-color: #030801a4;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 0.1px;
+    color:aliceblue;
+  }
+  
+  #tasks div .options {
+    justify-self:right;
+    display: flex;
+    gap: 18px;
+  }
+  
+  #tasks div .options i {
+    cursor: pointer;
+  }
+  
+  #msg {
+    color: red;
+  }
+  .people-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .title-list {
+    list-style-type: none;
+    margin: 10px;
+    margin-bottom: 1px;
+    padding: 0;
+  }
+  .people-list li {
+    display: inline-block;
+    text-align: center;
+    width: 10em;
+    height: 2em;
+    background: rgba(14, 176, 226, 0.473);
+    border: 1px;
+  }
+  .title-list li {
+    display:inline-block;
+   text-align: center;
+    width: 10em;
+    height: 2em;
+    background: rgba(0, 0, 0, 0.87);
+    border: 1px;
+    color:aqua;
+  }
+
+  .ju{
+    background: black;
+  color: white;
+  padding: 8px;
+  width: 80%;
+  border-radius: 50px;
+  transition: background 0.02s linear;
+  }
+
+  .ju:hover {
+    background: red;
+    transition: background 0.3s linear;
+  }
+
+  .fa-plus:hover{
+    background: red;
+    transition: background 0.3s linear;
+  }
